@@ -3,24 +3,24 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-/* .cental{
-    display: flex;
-    margin: 2em;
+.general{
+     display:flex;
+    /* margin: 2em;
     width: 90vw;
-    height: 90vh;
+    height: 90vh;  */
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-around;
   
-} */
+}
 .container {
   display: flex;
   margin: 2em;
-  border: #454545 solid;
+  border: #4545457a solid;
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.15);
   color: #f6f4e6;
-  background-color: #454545;
+  background-color: #4545459c;
   width: 30vw;
   height: 45vh;
   align-items: center;
