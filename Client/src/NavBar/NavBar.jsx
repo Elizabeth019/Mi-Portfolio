@@ -33,7 +33,7 @@ const Navbar = () => {
         <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex' }}>
           <li style={{ marginRight: '20px' }}>
             <Link
-              to="/"
+              to="/inicio"
               style={{
                 textDecoration: 'none',
                 color: '#fff',

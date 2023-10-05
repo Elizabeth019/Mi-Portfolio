@@ -1,0 +1,5 @@
+{
+  "files.autoSave": "afterDelay",
+  "prettier.enableDebugLogs": false,
+  "prettier.bracketSameLine": true
+}

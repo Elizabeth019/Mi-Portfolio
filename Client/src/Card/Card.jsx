@@ -1,10 +1,14 @@
 import React from 'react';
 import style from './Card.module.css';
 import stands from '../datos';
+import { Link } from 'react-router-dom';
 
 //import { Link } from '@chakra-ui/react';
 
 export default function Card() {
+   // const onClick = () => {
+      
+   // }
     return (
    //      <div className={style.central}>
       <div className={style.general}>
@@ -12,9 +16,9 @@ export default function Card() {
    return (
       <div key={stand.id} className={style.container}>
          <h4>{stand.title}</h4>
-        
+        <Link to={`/stand/${stand.id}`}>
         <img src={stand.image} alt='Imagen de química' />
-         
+         </Link>
          </div>
 )})}
 
