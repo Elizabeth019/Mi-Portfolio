@@ -1,36 +1,37 @@
 import React from 'react';
-import style from './Card.module.css';
 import stands from '../datos';
-import { Link } from 'react-router-dom';
-
-//import { Link } from '@chakra-ui/react';
+//import { Link } from 'react-router-dom';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 export default function Card() {
-   // const onClick = () => {
-      
-   // }
-    return (
-   //      <div className={style.central}>
-      <div className={style.general}>
-{stands.map((stand) => {
-   return (
-      <div key={stand.id} className={style.container}>
-         <h4>{stand.title}</h4>
-        <Link to={`/stand/${stand.id}`}>
-        <img src={stand.image} alt='Imagen de química' />
-         </Link>
-         </div>
-)})}
+  return (
+   //  <ImageList sx={{ width: 500, height: 450 }} variant="quilted" cols={4} rowHeight={121}>
+   //    {stands.map((stand) => (
+   //      <ImageListItem key={stand.id} cols={1} rows={1}>
+   //        <img src={stand.image} alt='Imagen de química' />
+          
+   //      </ImageListItem>
+   //    ))}
+   //  </ImageList>
 
-         {/* <h4>quimica</h4>
-        
-         <img src="../../asset/image/fotos-quimica-stands/IMG-20230815-WA0137.jpg" alt='Imagen de química' /> */}
-{/* </div>
-<div className={style.container}>
-         <h4>quimica</h4>
-        
-         <img src="../../asset/image/fotos-quimica-stands/IMG-20230815-WA0004.jpg" alt='Imagen de química' /> */}
-      </div>
-      // </div>
-   );
+   <ImageList
+  sx={{ width: 500, height: 450 }}
+  variant="quilted"
+  cols={4}
+  rowHeight={121}
+>
+  {stands.map((item) => (
+    <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+     <img
+  src={item.img}
+  srcSet={`${item.img} 1x, ${item.img2x} 2x`}
+  alt={item.title}
+  loading="lazy"
+/>
+    </ImageListItem>
+  ))}
+</ImageList>
+  );
 }

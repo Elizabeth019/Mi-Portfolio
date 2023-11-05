@@ -4,7 +4,7 @@ module.exports = (sequelize)=>{
   sequelize.define('Stands',{
     id:{
       type:DataTypes.UUID,
-      primaryKEy:true,
+      primaryKey:true,
     },
     title:{
       type:DataTypes.STRING,

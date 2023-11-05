@@ -17,7 +17,11 @@ export default function LandingPage() {
         onRotate={(x, y) => console.log('Rotate', x, y)}
       > */}
       <img src="./asset/image/quimica-removebg-preview.png" alt="logo" className={style.image}/>
-<Link to="/inicio" className={style.btn}>Ingresar</Link>
+
+      <button>
+  <a href="/inicio" className={style.btn2}><span class="spn2">HELLO !</span></a>
+</button>
+{/* <Link to="/inicio" className={style.btn}>Ingresar</Link> */}
     {/* </Atropos> 
     </div>*/}
     </div>

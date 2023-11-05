@@ -1,5 +1,5 @@
-const server = require ('./src/app');
-const {conn} =require('./src/db');
+const server = require ('./app');
+const {conn} =require('./db');
 
 conn.async({ force: false }).then(() => {
   server.listen(3001, () => {

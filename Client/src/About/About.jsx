@@ -63,6 +63,7 @@ export default function About() {
   <Image
     objectFit='cover'
     maxW={{ base: '50%', sm: '100px' }}
+    borderRadius={'50%'}
     src="./asset/istockphoto-463196047-1024x1024-transformed.jpeg"
     alt='Caffe Latte'
   />
