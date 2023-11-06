@@ -6,11 +6,13 @@ const exphbs = require('express-handlebars');
 
 const app = express();
 
-app.set('port', 3000);
+app.set('port', 5173);
 app.set('Client', path.join(__dirname,'Client'));
-app.engine('.hbs', exphbs({
-  defaultLayout: ''
-}));
+// app.engine('.hbs', exphbs({
+//   defaultLayout: ''
+// }));
+
+app.set('view engine', '.hbs');
 
 app.use(morgan());
 

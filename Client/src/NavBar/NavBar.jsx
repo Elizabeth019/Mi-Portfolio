@@ -10,7 +10,7 @@ const Navbar = () => {
         left: 0,
         width: '100%',
         height: '70px',
-        backgroundColor: '#0072ce',
+        backgroundColor: 'rgba(0, 114, 206, 0.5)',
         color: '#fff',
         padding: '10px 0',
         zIndex: 1,
@@ -25,6 +25,7 @@ const Navbar = () => {
           justifyContent: 'space-between',
           alignItems: 'center',
           padding: '0 20px',
+     
         }}
       >
         <Link to="/" style={{ fontSize: '24px', fontWeight: 'bold', color: '#fff', textDecoration: 'none' }}>
