@@ -1,8 +1,10 @@
 .container{
     display: flex;
     align-items: center; 
-     /*flex-direction: column; */
-   /* color: rgba(109, 45, 45, 0.863);
+    background-color: #212121;
+    margin:0px
+   /*  flex-direction: column; 
+    color: rgba(109, 45, 45, 0.863);
      background-color: rgb(255, 255, 255); */
 /*margin: 25%;
  background-image: url("../asset/image/quimica-removebg-preview.png"); */
@@ -36,15 +38,25 @@
 
 .logo{
   display: flex;
-  width: 100px;
-  height: 100px;
-  justify-content: flex-start;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  }
+
+  .transparencia {
+    
+    opacity: 0.5; /* Cambia el valor según la transparencia deseada */
+    width: 100%;
+    height: 40rem;
+    
   }
 
   .image{
-    display: flex;
+    position: relative;
     border-radius: 20px;
-    width: 50rem;
+    width: 30rem;
+    z-index: 1;
+
   }
 
   .btn2 {
