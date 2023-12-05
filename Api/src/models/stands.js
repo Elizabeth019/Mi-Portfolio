@@ -1,18 +1,11 @@
-const { DataTypes}=require('sequelize');
+const { Schema, model} = require('mongoose');
 
-module.exports = (sequelize)=>{
-  sequelize.define('Stands',{
-    id:{
-      type:DataTypes.UUID,
-      primaryKey:true,
-    },
-    title:{
-      type:DataTypes.STRING,
-      allowNull:false
-    },
-    image:{
-      type:DataTypes.STRING,
-      allowNull:false
-    }
-  })
-}
+const Photo = new Schema({
+  name:String,
+  description: String,
+  imageURL: String,
+  public_id: String
+})
+
+
+module.exports = model('Photo', Photo)
