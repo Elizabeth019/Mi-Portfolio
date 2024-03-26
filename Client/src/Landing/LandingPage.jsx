@@ -1,169 +1,183 @@
-import React from "react";
-import style from "./LandingPage.module.css";
-// import { Link } from "react-router-dom";
-// import Atropos from 'atropos/react';
-export default function LandingPage() {
-  return (
-    <div className={style.container}>
-      {/* <img src="./asset/image/quimica-removebg-preview.png" alt="logo" className={style.logo}/> */}
-      {/* <h1>Landing Page</h1>
-      <hr></hr>
-      <div> */}
-      {/* <Atropos
-        activeOffset={40}
-        shadowScale={1.05}
-        onEnter={() => console.log('Enter')}
-        onLeave={() => console.log('Leave')}
-        onRotate={(x, y) => console.log('Rotate', x, y)}
-      > */}
-
-
-
-      
-      <img src="./asset/image//fotos-quimica-stands\IMG-20230815-WA0043.jpg" alt="logo" className={style.transparencia}/>
-
-      <div className={style.logo}>
-
-      <img src="./asset/image/quimica-removebg-preview.png" alt="logo" className={style.image}/>
-
-      <button>
-  <a href="/inicio" className={style.btn2}><span class="spn2">HELLO !</span></a>
-</button>
-</div>
-{/* <Link to="/inicio" className={style.btn}>Ingresar</Link> */}
-    {/* </Atropos> 
-    </div>*/}
-    </div>
-  )};
-
-
-
-// import * as React from 'react';
-// import { useTheme } from '@mui/material/styles';
-// import Box from '@mui/material/Box';
-// import MobileStepper from '@mui/material/MobileStepper';
-// import Paper from '@mui/material/Paper';
-// import Typography from '@mui/material/Typography';
-// import Button from '@mui/material/Button';
-// import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-// import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-// import SwipeableViews from 'react-swipeable-views';
-// import { autoPlay } from 'react-swipeable-views-utils';
-
-// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
-// const images = [
-//   {
-//     label: 'San Francisco – Oakland Bay Bridge, United States',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
-//   },
-//   {
-//     label: 'Bird',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-//   },
-//   {
-//     label: 'Bali, Indonesia',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
-//   },
-//   {
-//     label: 'Goč, Serbia',
-//     imgPath:
-//       'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-//   },
-// ];
-
-// function SwipeableTextMobileStepper() {
-//   const theme = useTheme();
-//   const [activeStep, setActiveStep] = React.useState(0);
-//   const maxSteps = images.length;
-
-//   const handleNext = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-//   };
-
-//   const handleBack = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
-//   };
-
-//   const handleStepChange = (step) => {
-//     setActiveStep(step);
-//   };
-
+//  import React from "react";
+// import style from "./LandingPage.module.css";
+// export default function LandingPage() {
 //   return (
-//     <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-//       <Paper
-//         square
-//         elevation={0}
-//         sx={{
-//           display: 'flex',
-//           alignItems: 'center',
-//           height: 50,
-//           pl: 2,
-//           bgcolor: 'background.default',
-//         }}
-//       >
-//         <Typography>{images[activeStep].label}</Typography>
-//       </Paper>
-//       <AutoPlaySwipeableViews
-//         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-//         index={activeStep}
-//         onChangeIndex={handleStepChange}
-//         enableMouseEvents
-//       >
-//         {images.map((step, index) => (
-//           <div key={step.label}>
-//             {Math.abs(activeStep - index) <= 2 ? (
-//               <Box
-//                 component="img"
-//                 sx={{
-//                   height: 255,
-//                   display: 'block',
-//                   maxWidth: 400,
-//                   overflow: 'hidden',
-//                   width: '100%',
-//                 }}
-//                 src={step.imgPath}
-//                 alt={step.label}
-//               />
-//             ) : null}
-//           </div>
-//         ))}
-//       </AutoPlaySwipeableViews>
-//       <MobileStepper
-//         steps={maxSteps}
-//         position="static"
-//         activeStep={activeStep}
-//         nextButton={
-//           <Button
-//             size="small"
-//             onClick={handleNext}
-//             disabled={activeStep === maxSteps - 1}
-//           >
-//             Next
-//             {theme.direction === 'rtl' ? (
-//               <KeyboardArrowLeft />
-//             ) : (
-//               <KeyboardArrowRight />
-//             )}
-//           </Button>
-//         }
-//         backButton={
-//           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-//             {theme.direction === 'rtl' ? (
-//               <KeyboardArrowRight />
-//             ) : (
-//               <KeyboardArrowLeft />
-//             )}
-//             Back
-//           </Button>
-//         }
-//       />
-//     </Box>
-//   );
-// }
+//     <div className={style.container}>
+    
+// <img src="./asset/image/fotos-quimica-stands\IMG-20230815-WA0043.jpg" alt="logo" className={style.transparencia}/>
 
-// export default SwipeableTextMobileStepper;
+//       <div className={style.logo}>
 
+//       <img src="./asset/image/quimica-removebg-preview.png" alt="logo" className={style.image}/>
+
+//       <button>
+//   <a href="/inicio" className={style.btn2}><span class="spn2">HELLO !</span></a>
+// </button>
+// </div>
+//     </div>
+//   )};
+
+// //  import { useState } from 'react';
+// // import { Box, Button, useTheme } from '@chakra-ui/react';
+// // import { Image } from '@chakra-ui/react';
+// // import datos from '../datos.js';
+
+// // const Carousel = () => {
+// //   const [activeStep, setActiveStep] = useState(0);
+// //   const maxSteps = datos.length;
+// //   const theme = useTheme();
+
+// //   const handleNext = () => {
+// //     setActiveStep((prevActiveStep) => (prevActiveStep === maxSteps - 1 ? 0 : prevActiveStep + 1));
+// //   };
+
+// //   const handleBack = () => {
+// //     setActiveStep((prevActiveStep) => (prevActiveStep === 0 ? maxSteps - 1 : prevActiveStep - 1));
+// //   };
+
+// //   return (
+// //     <Box maxW="400px" flexGrow="1">
+// //       <Image
+// //         src={datos[activeStep].image}
+// //         alt={`Slide ${activeStep + 1}`}
+// //         width="100%"
+// //         height="auto"
+// //         objectFit="cover"
+// //       />
+// //       <Box display="flex" justifyContent="center" mt={4}>
+// //         <Button size="sm" onClick={handleBack} mr={2}>
+// //           Back
+// //         </Button>
+// //         <Button size="sm" onClick={handleNext}>
+// //           Next
+// //         </Button>
+// //       </Box>
+// //     </Box>
+// //   );
+// // };
+
+// // export default Carousel;
+
+
+// import React, { useState } from "react";
+// import style from "./LandingPage.module.css";
+// import { Box, Button, useTheme } from '@chakra-ui/react';
+// import { Image } from '@chakra-ui/react';
+
+// export default function LandingPage() {
+//   // Definir el array de imágenes
+//   const images = [
+//     "./asset/image/fotos-quimica-stands/IMG-20230815-WA0043.jpg",
+//     "./asset/image/fotos-quimica-stands/IMG-20230815-WA0064.jpg",
+//     "./asset/image/fotos-quimica-stands/IMG-20230815-WA0112.jpg"
+//   ];
+
+  'use client'
+
+  import React, { useState } from 'react';
+  import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
+  import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+  import Slider from 'react-slick';
+  import style from "./LandingPage.module.css"; // Importa tu archivo de estilos
+  
+  const LandingPage = () => {
+    const [slider, setSlider] = useState(null);
+  
+    const top = useBreakpointValue({ base: '90%', md: '50%' });
+    const side = useBreakpointValue({ base: '30%', md: '10px' });
+  
+    const cards = [
+      "./asset/image/fotos-quimica-stands/IMG-20230815-WA0043.jpg",
+      "./asset/image/fotos-quimica-stands/IMG-20230815-WA0064.jpg",
+      "./asset/image/fotos-quimica-stands/IMG-20230815-WA0112.jpg"
+    ];
+  
+    const settings = {
+      dots: true,
+      arrows: false,
+      fade: true,
+      infinite: true,
+      autoplay: true,
+      speed: 500,
+      autoplaySpeed: 5000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+  
+    const handleNext = () => {
+      slider?.slickNext();
+    };
+  
+    const handleBack = () => {
+      slider?.slickPrev();
+    };
+  
+    return (
+      <Box position="relative" height="633px" width="full" overflow="hidden">
+       
+       <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+
+         {/* Logo y botón */}
+         <div className={style.logo}>
+          <img src="./asset/image/quimica-removebg-preview.png" alt="logo" className={style.image} />
+          <button>
+            <a href="/inicio" className={style.btn2}><span className="spn2">HELLO !</span></a>
+          </button>
+        </div>
+      
+        <IconButton
+          aria-label="left-arrow"
+          colorScheme="messenger"
+          borderRadius="full"
+          position="absolute"
+          left={side}
+          top={top}
+          transform={'translate(0%, -50%)'}
+          zIndex={2}
+          onClick={handleBack}>
+          <BiLeftArrowAlt />
+        </IconButton>
+        
+        <IconButton
+          aria-label="right-arrow"
+          colorScheme="messenger"
+          borderRadius="full"
+          position="absolute"
+          right={side}
+          top={top}
+          transform={'translate(0%, -50%)'}
+          zIndex={2}
+          onClick={handleNext}>
+          <BiRightArrowAlt />
+        </IconButton>
+        <Slider {...settings} ref={(slider) => setSlider(slider)}>
+          {cards.map((url, index) => (
+            <Box
+              key={index}
+              height={'3xl'}
+              position="relative"
+              backgroundPosition="center"
+              backgroundRepeat="no-repeat"
+              backgroundSize="cover"
+              backgroundImage={`url(${url})`}
+              className={style.transparencia}
+            />
+          ))}
+        </Slider>
+      
+      </Box>
+    );
+  }
+  
+  export default LandingPage;
+  
+  
