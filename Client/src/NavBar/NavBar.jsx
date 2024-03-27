@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+//import ToggleColorMode from "../modo/ThemeContext";
+import { useTheme } from '../modo/ThemeProvider';
+import { BiSun, BiMoon } from 'react-icons/bi';
 
 const Navbar = () => {
+  const { darkMode, toggleTheme } = useTheme();
   return (
     <nav
       style={{
@@ -9,8 +13,8 @@ const Navbar = () => {
         top: 0,
         left: 0,
         width: '100%',
-        height: '70px',
-        backgroundColor: 'rgba(0, 114, 206, 0.5)',
+        height: '90px',
+        backgroundColor: 'rgba(0, 114, 206, 0.9)',
         color: '#fff',
         padding: '10px 0',
         zIndex: 1,
@@ -80,6 +84,9 @@ const Navbar = () => {
               Contacto
             </Link>
           </li>
+          <li>
+      <button onClick={toggleTheme}>{darkMode ? <BiMoon /> : <BiSun />}</button>
+    </li>
         </ul>
       </div>
     </nav>
