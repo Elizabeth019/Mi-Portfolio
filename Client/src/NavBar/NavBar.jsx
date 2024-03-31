@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import ToggleColorMode from "../modo/ThemeContext";
 import { useTheme } from '../modo/ThemeProvider';
 import { BiSun, BiMoon } from 'react-icons/bi';
 
