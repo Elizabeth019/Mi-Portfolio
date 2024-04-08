@@ -43,12 +43,16 @@ const paginatedItems = imageData && imageData.slice(startIndex, endIndex);
         ))}
       </Box>
       <Box textAlign="center" marginTop="10px">
-        <Button variant="contained" onClick={handlePrevPage} disabled={page === 0}>
+      {page !== 0 && (
+          <Button variant="contained" onClick={handlePrevPage} disabled={page === 0}>
           Anterior
         </Button>
-        <Button variant="contained" onClick={handleNextPage} disabled={endIndex >= stands.length}>
-          Siguiente
-        </Button>
+      )}
+         {imageData && endIndex < imageData.length && (
+          <Button variant="contained" onClick={handleNextPage}>
+            Siguiente
+          </Button>
+        )}
       </Box>
     </Box>
   );
