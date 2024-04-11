@@ -24,7 +24,7 @@ import React, { useState } from 'react';
       infinite: true,
       autoplay: true,
       speed: 500,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
@@ -59,7 +59,7 @@ import React, { useState } from 'react';
           </button>
         </div>
       
-        <IconButton
+        {/* <IconButton
           aria-label="left-arrow"
           colorScheme="messenger"
           borderRadius="full"
@@ -70,7 +70,7 @@ import React, { useState } from 'react';
           zIndex={2}
           onClick={handleBack}>
           <BiLeftArrowAlt />
-        </IconButton>
+        </IconButton> 
         
         <IconButton
           aria-label="right-arrow"
@@ -83,7 +83,7 @@ import React, { useState } from 'react';
           zIndex={2}
           onClick={handleNext}>
           <BiRightArrowAlt />
-        </IconButton>
+        </IconButton>*/}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
           {cards.map((url, index) => (
             <Box
