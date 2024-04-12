@@ -1,69 +1,29 @@
-.container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+.h1{
+  font-size: 1.8rem;
+  color: rgb(216, 81, 81);
   justify-content: center;
+  float: center;
+  text-align: center;
+  
 
-  margin: 115px 50px 50px 50px;
-   /*  width: 90vw;
-    height: 90vh; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    */
-} 
-.img{
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
 }
 
-/* Estilo del contenedor principal */
-/* .about-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  background-color: #f8f8f8;
-  box-shadow: 0 2px 4px rgba(202, 66, 66, 0.1);
-  text-align: justify;
-} */
-
-/* Estilo para el título */
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
+.resumen{
+  font-size: 1.2rem;
+  color: rgb(82, 75, 75);
+  justify-content: center;
+  float: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-/* Estilo para los párrafos */
-.paragraph {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: #666;
+.img-about{
+  width: 40rem;
+  height: 40rem;
+  margin: 8rem 23rem;
 }
 
-/* Estilo para los encabezados secundarios */
-.subtitle {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-  color: #333333d8;
-}
-
-/* Estilo para listas con viñetas */
-.list {
-  margin-left: 20px;
-  list-style-type: disc;
-}
-
-/* Estilo para enlaces */
-.link {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.link:hover {
-  color: #0056b3;
+.list{
+  margin-top: 1rem;
 }
