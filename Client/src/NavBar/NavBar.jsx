@@ -5,6 +5,19 @@ import { BiSun, BiMoon } from 'react-icons/bi';
 
 const Navbar = () => {
   const { darkMode, toggleTheme } = useTheme();
+
+  const scrollToContact = () => {
+      const currentPath = window.location.pathname;
+    
+      if (currentPath !== '/nosotros') {
+        window.location.href = '/nosotros#contacto';
+      } else {
+        if (contactRef.current) {
+          contactRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
   return (
     <nav
       style={{
@@ -72,8 +85,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li style={{ marginRight: '20px' }}>
-            <Link
-              to="/contacto"
+            {/* <Link
+              to="/nosotros#about-contacto"
               style={{
                 textDecoration: 'none',
                 color: '#fff',
@@ -81,7 +94,8 @@ const Navbar = () => {
               }}
             >
               Contacto
-            </Link>
+            </Link> */}
+            <a href="#contacto" onClick={scrollToContact} style={{ textDecoration: 'none', color: '#fff', transition: 'color 0.3s' }}>Contacto</a>
           </li>
           <li>
       <button onClick={toggleTheme}>{darkMode ? <BiMoon /> : <BiSun />}</button>
