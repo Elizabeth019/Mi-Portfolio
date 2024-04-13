@@ -1,9 +1,10 @@
 .container{
   display:block;
-
-  margin-top: 120px;
-    /* width: 90vw;
-    height: 90vh; */
+ /* background-color: #212121e7;
+   background: linear-gradient(45deg, #fbfbfc 0%, #26a3f0 100%); */
+  margin:  0;
+    /* width: 90vw;*/
+    height: 100 rem; 
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,10 +18,14 @@
     transform: translateX(0);
   }
 }
-
+.title{
+  margin-top: 90px;
+}
 .container h1 {
+  margin: 8rem 0 2rem 0;
+  font-size: 2rem;
   text-align: center;
-  color: blue;
+  color: rgb(40, 144, 212);
   text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.589);
   animation: animate__fadeInLeft 1s ease-in-out, slideRight 2s ease-in-out;
   animation-fill-mode: forwards;
