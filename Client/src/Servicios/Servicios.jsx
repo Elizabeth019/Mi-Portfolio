@@ -75,18 +75,6 @@ function Servicios() {
 export default Servicios;
 
 
-// import React from "react";
-// import {
-//   ChakraProvider,
-//   Box,
-//   Flex,
-//   Heading,
-//   Text,
-//   Button,
-//   Grid,
-//   GridItem,
-// } from "@chakra-ui/react";
-
 function ServiceDescription() {
   return (
     <Box  w={{
@@ -123,19 +111,3 @@ function ServiceDescription() {
   );
 }
 
-// function Servicios() {
-//   return (
-//     <ChakraProvider>
-//       <Flex justifyContent="center" alignItems="center" h="100vh">
-//         <Box maxW="lg">
-//           <ServiceDescription />
-//           <Button mt="8" colorScheme="blue" size="lg">
-//             ¡Contáctanos Ahora!
-//           </Button>
-//         </Box>
-//       </Flex>
-//     </ChakraProvider>
-//   );
-// }
-
-// export default Servicios;
