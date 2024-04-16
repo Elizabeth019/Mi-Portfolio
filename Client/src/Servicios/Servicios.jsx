@@ -25,7 +25,7 @@ function Servicios() {
   return (
     <ChakraProvider>
       
-      <Flex justifyContent="center" alignItems="center" h="100vh">
+      <Flex justifyContent="center" alignItems="center" marginTop="20vh" marginBottom="8vh">
         <Box maxW="lg" textAlign="center">
           <Heading mb="4">Nuestros Servicios</Heading>
           <Grid templateColumns="repeat(2, 1fr)" gap={6}>
@@ -55,18 +55,13 @@ function Servicios() {
         px={8}
         py={12}
         mx="auto">
-         <Box maxW="lg">
+         <Box >
            <ServiceDescription />
-           <Button mt="8" colorScheme="blue" size="lg">
+           <Button mt="8" colorScheme="blue" size="lg" marginLeft="33rem" onClick={() => window.location.href = '/nosotros#contacto'}> 
              ¡Contáctanos Ahora!
            </Button>
        </Box>
        </Flex>
-
-          {/* <Button mt="8" colorScheme="blue" size="lg">
-            ¡Contáctanos Ahora!
-          </Button>
-          <ServiceDescription /> */}
         
     </ChakraProvider>
   );
@@ -77,18 +72,28 @@ export default Servicios;
 
 function ServiceDescription() {
   return (
-    <Box  w={{
-      base: "full",
-      md: 11 / 12,
-      xl: 9 / 12,
-    }}
-    mx="auto"
-    pr={{
-      md: 20,
-    }}>
-      <Text color="white" fontWeight="bold" mb="4" justifyContent={"center"}>
-        ¡Bienvenido a nuestro servicio especializado en armado y planificación de stands para exposiciones!
-      </Text>
+    <Box >
+      <Text color="white" fontWeight="bold" justifyContent="center" mb={4} marginLeft="15rem"
+  fontSize={{
+    base: "4xl",
+    md: "4xl",
+    lg: "3xl",
+  }}
+  lineHeight="shorter"
+  textShadow="2px 2px 3px rgba(0, 0, 0, 0.5)">
+  ¡Bienvenido a nuestro servicio especializado en armado y 
+</Text>
+<Text color="white" fontWeight="bold" justifyContent="center" mb={4} marginLeft="20rem"
+  fontSize={{
+    base: "4xl",
+    md: "4xl",
+    lg: "3xl",
+  }}
+  lineHeight="shorter"
+  textShadow="2px 2px 3px rgba(0, 0, 0, 0.5)">
+ planificación de stands para exposiciones!
+</Text>
+
       <Text color="black.600" fontSize="lg" mb="4">
         En nuestro equipo, comprendemos la importancia crucial que tienen los stands en eventos y ferias comerciales. Son mucho más que simples estructuras; son la manifestación física de la identidad y los valores de tu marca, así como una herramienta poderosa para captar la atención de clientes potenciales y crear conexiones significativas.
       </Text>
