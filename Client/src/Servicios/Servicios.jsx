@@ -8,6 +8,7 @@ import {
   Button,
   Grid,
   GridItem,
+  Link
 } from "@chakra-ui/react";
 
 function ServiceCard({ title, description }) {
@@ -28,7 +29,7 @@ function Servicios() {
       <Flex justifyContent="center" alignItems="center" marginTop="20vh" marginBottom="8vh">
         <Box maxW="lg" textAlign="center">
           <Heading mb="4">Nuestros Servicios</Heading>
-          <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+          <Grid templateColumns="repeat(2, 1fr)" gap={6} >
             <GridItem>
               <ServiceCard
                 title="Armado y Planificación de Stands"
@@ -57,9 +58,11 @@ function Servicios() {
         mx="auto">
          <Box >
            <ServiceDescription />
-           <Button mt="8" colorScheme="blue" size="lg" marginLeft="33rem" onClick={() => window.location.href = '/nosotros#contacto'}> 
+           <Link href="mailto:quimica.stands@gmail.com" textDecoration="none">
+           <Button mt="8" colorScheme="blue" size="lg" marginLeft="33rem" > 
              ¡Contáctanos Ahora!
            </Button>
+           </Link>
        </Box>
        </Flex>
         
