@@ -38,8 +38,8 @@ function Servicios() {
             </GridItem>
             <GridItem>
               <ServiceCard
-                title="Creación de Muebles, Escaleras y Portones"
-                description="Fabricamos muebles a medida para hogares, oficinas y espacios comerciales, así como escaleras y portones que combinan estilo y durabilidad."
+                title="Creación de Muebles, Showroom y Escaleras"
+                description="Fabricamos muebles a medida para hogares, oficinas y espacios comerciales, así como escaleras que combinan estilo y durabilidad."
               />
             </GridItem>
           </Grid>
