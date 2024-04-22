@@ -5,6 +5,7 @@ import { getAllPhotos } from '../Redux/Actions/actions';
 //import  {photos } from '../Redux/reducer'
 import stands from '../datos';
 
+
 const itemsPerPage = 16; // Cantidad de imágenes por página
 
 export default function PaginatedImageList() {
