@@ -12,23 +12,12 @@ import Contacto from '../Contacto/contacto';
 
 export default function About() {
   const contactRef = useRef(null);
-  // const scrollToContact = () => {
-  //   const currentPath = window.location.pathname;
-  
-  //   if (currentPath !== '/nosotros') {
-  //     window.location.href = '/nosotros#contactos';
-  //   } else {
-  //     if (contactRef.current) {
-  //       contactRef.current.scrollIntoView({ behavior: 'smooth' });
-  //     }
-  //   }
-  // };
   
  return (
 <>
 
 <Flex alignItems="center" justifyContent="center" flexDirection={{ base: 'column', md: 'row' }} marginTop="5.5rem" 
-  marginRight={{ base: '0', md: '1rem' }} >
+  mx={{ base: '1rem', md: '1rem' }} >
   <Box flex="1" mr={{ base: 0, md: 2 }}> {/* Agregar margen derecho en todas las pantallas */}
     <Image
       src={fotoImage}
