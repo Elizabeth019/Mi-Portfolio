@@ -26,8 +26,8 @@ function Servicios() {
   return (
     <ChakraProvider>
       
-      <Flex justifyContent="center" alignItems="center" marginTop="20vh" marginBottom="8vh">
-        <Box maxW="lg" textAlign="center">
+      <Flex justifyContent="center" alignItems="center" >
+        <Box maxW="lg" textAlign="center" marginTop="20vh" marginBottom="8vh">
           <Heading mb="4">Nuestros Servicios</Heading>
           <Grid templateColumns="repeat(2, 1fr)" gap={6} >
             <GridItem>
@@ -59,7 +59,7 @@ function Servicios() {
          <Box >
            <ServiceDescription />
            <Link href="mailto:quimica.stands@gmail.com" textDecoration="none">
-           <Button mt="8" colorScheme="blue" size="lg" marginLeft="33rem" > 
+           <Button mt="8" colorScheme="blue" size="lg" mx="auto" marginLeft={{ base: "12rem", md: "33rem" }}> 
              ¡Contáctanos Ahora!
            </Button>
            </Link>
@@ -76,7 +76,7 @@ export default Servicios;
 function ServiceDescription() {
   return (
     <Box >
-      <Text color="white" fontWeight="bold" justifyContent="center" mb={4} marginLeft="15rem"
+      <Text color="white" fontWeight="bold" justifyContent="center" mb={4} marginLeft={{ base: "5rem", md: "15rem" }}
   fontSize={{
     base: "4xl",
     md: "4xl",
@@ -86,7 +86,7 @@ function ServiceDescription() {
   textShadow="2px 2px 3px rgba(0, 0, 0, 0.5)">
   ¡Bienvenido a nuestro servicio especializado en armado y 
 </Text>
-<Text color="white" fontWeight="bold" justifyContent="center" mb={4} marginLeft="20rem"
+<Text color="white" fontWeight="bold" justifyContent="center" mb={4} marginLeft={{ base: "5rem", md: "20rem" }}
   fontSize={{
     base: "4xl",
     md: "4xl",
