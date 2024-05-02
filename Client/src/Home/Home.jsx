@@ -7,7 +7,7 @@ function Home() {
   return (
 
 <div className={`${style.constellationBackground} ${style.constellationLine}`}>
-<Flex alignItems="center" justifyContent="center" flexDirection={{ base: 'column', md: 'row' }}>
+<Flex alignItems="center" justifyContent="center" flexDirection={{ base: 'column', md: 'row' }} mx="auto">
 <Box flex="1" mr={{ base: 0, md: 2 }}>
       <div className={style.container}>
         {/* <hr></hr> */}
@@ -25,8 +25,15 @@ Con una combinación de creatividad, experiencia y compromiso con la excelencia,
 <Text margin="0 30px">
 Explora nuestro sitio para descubrir cómo podemos ayudarte a destacar en tu próximo evento. ¡Estamos emocionados de trabajar contigo para crear un stand que refleje la esencia de tu marca y te lleve al siguiente nivel de éxito!
 </Text>
-<Box marginLeft="30rem">
-¡Bienvenido a la experiencia Quimica Stands!
+<Box margin="2rem 15rem 15rem 20rem" color="grid.100" fontWeight="bold" justifyContent="center" mb={4}  mr={{ base: 0, md: 2 }} marginLeft={{ base: "2rem", md: "23rem" }}
+  fontSize={{
+    base: "2xl",
+    md: "4xl",
+    lg: "2xl",
+  }}
+  lineHeight="shorter"
+  textShadow="2px 2px 3px rgba(0, 0, 0, 0.5)">
+¡Te invitamos a explorar la experiencia Quimica Stands!
 </Box>
 </Box>
         <div className={style.cards}>
