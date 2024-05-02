@@ -7,6 +7,7 @@ import About from './About/About';
 import Contacto from './Contacto/contacto';
 import Form from './Image_Form/image_form';
 import Servicios from './Servicios/Servicios';
+import Admin from './AdminPage/Admin'
 
 const App = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const App = () => {
     
     <>
 
-      {location.pathname !== '/' && <Navbar />}
+      {location.pathname !== '/' && location.pathname !== '/admin' && <Navbar />}
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/inicio' element={<Home />} />
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/nosotros' element={<About />} />
         <Route path='/contacto' element={<Contacto />} />
         <Route path='/form' element={<Form />} />
+        <Route path='/admin' element={<Admin />} />
       </Routes>
    
     </>
