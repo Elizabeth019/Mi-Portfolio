@@ -1,15 +1,14 @@
-.container{
-  display:block;
- /* background-color: #212121e7;
-   background: linear-gradient(45deg, #fbfbfc 0%, #26a3f0 100%); */
-  margin:  0;
-    /* width: 90vw;*/
-    height: 100 rem; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+/* Home.module.css */
+
+.container {
+  display: block;
+  margin: 0;
+  height: 'auto';
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 @keyframes slideRight {
   0% {
     transform: translateX(-100%);
@@ -18,9 +17,11 @@
     transform: translateX(0);
   }
 }
-.title{
+
+.title {
   margin-top: 90px;
 }
+
 .container h1 {
   margin: 8rem 0 2rem 0;
   font-size: 2rem;
@@ -31,12 +32,36 @@
   animation-fill-mode: forwards;
 }
 
-.cards{
-  display:flex;
-  /* margin: 2em;
-  width: 90vw;
-  height: 90vh;  */
+.cards {
+  display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
-  justify-content:space-around;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+/* Estilos para el fondo de constelaciones */
+.constellation-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black; /* Cambiar el color de fondo si es necesario */
+}
+
+.constellation-line {
+  position: absolute;
+  border: 1px solid white;
+  opacity: 0.5;
+  animation: move-constellation 10s infinite linear;
+}
+
+@keyframes move-constellation {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(110%);
+  }
 }
